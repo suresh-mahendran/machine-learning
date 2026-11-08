@@ -32,7 +32,7 @@ tree, and SVM to account for the minority fail class.
 
 Add your repository URL here after pushing this project:
 
-`https://github.com/<your-account>/<your-repository>`
+`https://github.com/suresh-mahendran/machine-learning`
 
 ## d. Models used and evaluation
 
@@ -71,7 +71,7 @@ ml_utils.py
 requirements.txt
 runtime.txt
 README.md
-data/student-por.csv
+data/student-data.csv
 test_data.csv
 model/
     logistic_regression.joblib
@@ -99,7 +99,7 @@ streamlit run app.py
 To train from another copy of the source file:
 
 ```bash
-python train_models.py --data /path/to/student-por.csv
+python train_models.py --data /path/to/student-data.csv
 ```
 
 The training script writes the five fitted preprocessing/model pipelines to
@@ -111,16 +111,6 @@ fits them on uploaded data.
 
 ## Streamlit Community Cloud
 
-Push this folder to your GitHub repository, select `app.py` as the app entry
-point, and use Python 3.13. After deployment, add the live app URL here:
 
-`https://<your-app-name>.streamlit.app`
-
-## Reproducibility and submission notes
-
-- Training and evaluation were run locally for development. Run the workflow on
-  BITS Virtual Lab and capture your own required screenshot there.
-- Replace the repository and app URL placeholders after publishing.
-- Review the dataset terms and repository visibility before publishing the CSV.
-- Read and understand the implementation, then write your own interpretation of
-  the model results for the assignment.
+live app URL:
+`https://machine-learning-qf3jpvyw3jdkk3bzhq7tcb.streamlit.app`
