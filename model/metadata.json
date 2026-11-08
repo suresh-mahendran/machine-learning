@@ -1,0 +1,77 @@
+{
+  "dataset": "UCI Student Performance - Portuguese course",
+  "source_file": "data/student-por.csv",
+  "source_url": "https://archive.ics.uci.edu/dataset/320/student%2Bperformance",
+  "target_column": "failed",
+  "target_definition": "1 if G3 < 10 (fail), otherwise 0 (pass)",
+  "positive_class": 1,
+  "excluded_grade_columns": [
+    "G1",
+    "G2",
+    "G3"
+  ],
+  "feature_columns": [
+    "school",
+    "sex",
+    "age",
+    "address",
+    "famsize",
+    "Pstatus",
+    "Medu",
+    "Fedu",
+    "Mjob",
+    "Fjob",
+    "reason",
+    "guardian",
+    "traveltime",
+    "studytime",
+    "failures",
+    "schoolsup",
+    "famsup",
+    "paid",
+    "activities",
+    "nursery",
+    "higher",
+    "internet",
+    "romantic",
+    "famrel",
+    "freetime",
+    "goout",
+    "Dalc",
+    "Walc",
+    "health",
+    "absences"
+  ],
+  "rows": 649,
+  "train_rows": 519,
+  "test_rows": 130,
+  "test_class_counts": {
+    "pass": 110,
+    "fail": 20
+  },
+  "test_size": 0.2,
+  "random_state": 42,
+  "scikit_learn_version": "1.9.1",
+  "models": {
+    "Logistic Regression": {
+      "key": "logistic_regression",
+      "filename": "logistic_regression.joblib"
+    },
+    "Decision Tree": {
+      "key": "decision_tree",
+      "filename": "decision_tree.joblib"
+    },
+    "K-Nearest Neighbors": {
+      "key": "knn",
+      "filename": "knn.joblib"
+    },
+    "Gaussian Naive Bayes": {
+      "key": "gaussian_nb",
+      "filename": "gaussian_nb.joblib"
+    },
+    "Support Vector Machine": {
+      "key": "svm",
+      "filename": "svm.joblib"
+    }
+  }
+}
